@@ -1,0 +1,105 @@
+.refund {
+  min-height: 100vh;
+  padding-top: 130px;
+  padding-bottom: 130px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f9f9f9;
+}
+
+.refund h1 {
+  font-size: 2.8rem;
+  width: 60%;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.refund-batch img {
+  width: 80%;
+  max-width: 600px;
+  height: auto;
+}
+
+.refund h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.steps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.step img {
+  width: 80%;
+  max-width: 300px;
+  height: auto;
+}
+
+@media (max-width: 1024px) {
+  .refund h1 {
+    font-size: 2.4rem;
+    width: 70%;
+  }
+
+  .refund h2 {
+    font-size: 1.8rem;
+  }
+
+  .steps {
+    gap: 15px;
+  }
+
+  .step img {
+    width: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  .refund h1 {
+    font-size: 2rem;
+    width: 80%;
+  }
+
+  .refund h2 {
+    font-size: 1.6rem;
+  }
+
+  .steps {
+    gap: 10px;
+  }
+
+  .step img {
+    width: 60%;
+  }
+}
+
+@media (max-width: 480px) {
+  .refund {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .refund h1 {
+    font-size: 1.8rem;
+    width: 90%;
+  }
+
+  .refund h2 {
+    font-size: 1.4rem;
+  }
+
+  .steps {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .step img {
+    width: 80%;
+  }
+}

@@ -1,0 +1,202 @@
+.curriculum {
+  min-height: 100vh;
+  padding-top: 150px;
+  background: #f9ebfc;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.curriculum span {
+  padding: 8px 30px;
+  border-radius: 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #b73bbe;
+  background: #f1d2f3;
+}
+
+.curriculum h2 {
+  margin-bottom: 30px;
+  font-size: 2.5em;
+  background: linear-gradient(to right, #b73bbe, #ebcb2e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 0.8;
+  margin-bottom: 50px;
+}
+
+.accordions {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.accordion:first-child {
+  border-radius: 20px 20px 0 0;
+}
+
+.accordion:last-child {
+  border-radius: 0 0 20px 20px;
+}
+
+.accordion {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20px 30px;
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: 1px solid #000;
+  margin-bottom: 10px;
+}
+
+.accordion .col-1 {
+  flex: 2;
+  text-align: left;
+}
+
+.accordion .col-1 h3 {
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.accordion .col-1 span {
+  line-height: 1;
+}
+
+.accordion .col-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.accordion .col-2 button {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background: none;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.accordion .col-2 button span {
+  background: #f0e2f1;
+}
+
+.accordion .col-2 button img {
+  margin-right: 10px;
+}
+
+@media (max-width: 1024px) {
+  .curriculum span {
+    font-size: 1em;
+    padding: 8px 20px;
+  }
+
+  .curriculum h2 {
+    font-size: 2em;
+  }
+
+  .accordions {
+    width: 90%;
+  }
+
+  .accordion {
+    width: 90%;
+    padding: 15px 20px;
+  }
+
+  .accordion .col-1 h3 {
+    font-size: 18px;
+  }
+
+  .accordion .col-2 button {
+    padding: 8px 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .curriculum span {
+    font-size: 0.9em;
+    padding: 6px 15px;
+  }
+
+  .curriculum h2 {
+    font-size: 1.8em;
+  }
+
+  .accordions {
+    width: 95%;
+  }
+
+  .accordion {
+    width: 95%;
+    padding: 10px 15px;
+  }
+
+  .accordion .col-1 h3 {
+    font-size: 16px;
+  }
+
+  .accordion .col-2 button {
+    padding: 6px 12px;
+  }
+
+  .accordion .col-2 button span {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  .curriculum {
+    padding-top: 100px;
+  }
+
+  .curriculum span {
+    font-size: 0.8em;
+    padding: 4px 10px;
+  }
+
+  .curriculum h2 {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+  }
+
+  .accordions {
+    width: 100%;
+  }
+
+  .accordion {
+    width: 100%;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .accordion .col-1 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .accordion .col-2 {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .accordion .col-2 button {
+    width: 100%;
+    padding: 8px;
+  }
+
+  .accordion .col-2 button span {
+    font-size: 0.8em;
+  }
+}
